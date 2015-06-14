@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.dtje.dtjenew.ProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:id="@+id/payment1"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:text="Restaurant Hokaido" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="22sp"/>
+        <TextView android:text="Date: 09/07/2015" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+        <TextView android:text="Amount: RM100.06" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+        <TextView android:text="Status: Outstanding" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/payment2"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:text="Restaurant Hindi" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="22sp"/>
+        <TextView android:text="Date: 06/06/2015" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+        <TextView android:text="Amount: RM90.66" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+        <TextView android:text="Status: Paid" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payment3"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:text="Restaurant Pokemon" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="22sp"/>
+        <TextView android:text="Date: 21/04/2015" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+        <TextView android:text="Amount: RM15.90" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+        <TextView android:text="Status: Outstanding" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>
