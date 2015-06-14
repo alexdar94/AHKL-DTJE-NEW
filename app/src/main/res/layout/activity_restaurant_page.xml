@@ -243,25 +243,25 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="horizontal"
-        android:background="#40271E">
+        android:background="@color/actionbar_background">
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:id="@+id/book_button"
             android:layout_weight="1"
             android:text="Book Now"
             />
         <Button
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/order_button"
             android:text="Order Now"
             android:onClick="order"/>
         <Button
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/save_button"
             android:text="Favorites"

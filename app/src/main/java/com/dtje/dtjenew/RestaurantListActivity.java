@@ -1,8 +1,5 @@
 package com.dtje.dtjenew;
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -72,19 +69,9 @@ public class RestaurantListActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }else if(id == R.id.action_gps){
-            Intent intent = new Intent(RestaurantListActivity.this, OrderActivity.class);
-            PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, 0);
-            Notification noti = new Notification.Builder(this)
-                    .setTicker("Thanks for using DTJE!")
-                    .setContentTitle("Welcome to Hokkaido Ichiba Restaurant")
-                    .setContentText("Tap this to order")
-                    .setSmallIcon(R.drawable.s3)
-                    .setContentIntent(pIntent).getNotification();
-            noti.defaults |= Notification.DEFAULT_SOUND;
-            noti.defaults |= Notification.DEFAULT_VIBRATE;
-            noti.flags=Notification.FLAG_AUTO_CANCEL;
-            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-            notificationManager.notify(0, noti);
+            Intent intent= new Intent(RestaurantListActivity.this,MapsActivity.class);
+            startActivity(intent);
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

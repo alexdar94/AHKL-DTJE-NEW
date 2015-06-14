@@ -66,7 +66,7 @@ public class RandomFragment extends Fragment {
         wrestaurant1.setPrice("RM100-RM200");
         wrestaurant1.setContact("017-2532221");
         wrestaurant1.setPicture(R.drawable.muzeum_west);
-        wrestaurant1.setDescription("Muzeum Restaurant & Bar was born from the concept of a ¡®gastropub¡® created based on the idea of a ¡®museum¡®. Muzeum offers quality and popular authentic dishes, to an interior with the tiniest details place on making every corner as iconic as possible, relaxing, entertaining and unique experience to dine and booze.");
+        wrestaurant1.setDescription("Muzeum Restaurant & Bar was born from the concept of a t¡®gastropub¡® created based on the idea of a ¡®museum¡®. Muzeum offers quality and popular authentic dishes, to an interior with the tiniest details place on making every corner as iconic as possible, relaxing, entertaining and unique experience to dine and booze.");
 
     }
 

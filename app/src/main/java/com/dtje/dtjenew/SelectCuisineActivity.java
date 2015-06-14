@@ -1,5 +1,8 @@
 package com.dtje.dtjenew;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -47,6 +50,21 @@ public class SelectCuisineActivity extends ActionBarActivity {
                         intent1.putExtra("BUNDLE", arg1);
                         startActivity(intent1);
                         Log.e("asdasd", "asdasdasdasd");
+                        break;
+                    case 8:
+                        Intent intent2 = new Intent(SelectCuisineActivity.this, OrderActivity.class);
+                        PendingIntent pIntent = PendingIntent.getActivity(SelectCuisineActivity.this, 0, intent2, 0);
+                        Notification noti = new Notification.Builder(SelectCuisineActivity.this)
+                                .setTicker("Thanks for using DTJE!")
+                                .setContentTitle("Welcome to Hokkaido Ichiba Restaurant")
+                                .setContentText("Tap this to order")
+                                .setSmallIcon(R.drawable.s3)
+                                .setContentIntent(pIntent).getNotification();
+                        noti.defaults |= Notification.DEFAULT_SOUND;
+                        noti.defaults |= Notification.DEFAULT_VIBRATE;
+                        noti.flags=Notification.FLAG_AUTO_CANCEL;
+                        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                        notificationManager.notify(0, noti);
                         break;
                     default:
                         break;
